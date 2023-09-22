@@ -1,0 +1,433 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+:root{
+  --clr-black: black;
+  --clr-white:white;
+  --clr-gray: rgb(137, 138, 138);
+  --clr-brown: rgb(187,90,58);
+  --clr-bg-white: rgb(254,242,240);
+  --clr-light-black: rgb(0,0,0,0.3); 
+}
+
+body{
+  font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.search-box{
+  background-color: var(--clr-black);
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+}
+
+.search-inp{
+  width: 12rem;
+  height: 100%;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.search-inp input{
+  width: 100%;
+  background-color: var(--clr-black);
+  outline: none;
+  border: none;
+  color: var(--clr-white);
+  font-size: 0.89rem;
+}
+
+.search-icon{
+  color: var(--clr-gray);
+  align-self: center;
+}
+
+.social-media{
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media i{
+  cursor: pointer;
+}
+
+.search-inp:hover .search-icon{
+  color: var(--clr-white);
+}
+
+.search-inp:hover{
+  border-bottom: 3px solid var(--clr-white);
+}
+
+.search-inp ::placeholder{
+  color: var(--clr-white);
+}
+
+.navigation-box{
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+}
+
+.nav-link{
+  width: 18rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: var(--clr-black);
+}
+
+.nav-link .nav-home{
+  color: var(--clr-brown);
+}
+
+.nav-link a:hover{
+  color: var(--clr-brown);
+}
+
+.blog-container{
+  width: 100%;
+  position: relative;
+}
+
+.blog-image-box{
+  padding-top: 7.5rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.blog-img1,.blog-img2,.blog-img3{
+  width: 32.5%;
+}
+
+.blog-img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.blog-img1{
+  width: 32.9%;
+}
+
+.blog-title{
+  width: 100%;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -2.0rem;
+}
+
+.blog-title h2{
+  width: 35%;
+  text-align: center;
+  background-color: var(--clr-white);
+  padding: 1rem 0rem;
+}
+
+/* my blog container starts here!!! */
+
+.my-blog-container{
+  width: 100%;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-section{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.blog1{
+  width: 35rem;
+  border: 1px solid var(--clr-gray);
+  display: flex;
+}
+
+.blog1-img img{
+  height: 100%;
+}
+
+.blog1-cnt{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cnt-title:hover{
+  color: var(--clr-brown);
+}
+
+.cnt-description{
+  line-height: 1.4rem;
+}
+
+.cnt-description:hover{
+  color: var(--clr-brown);
+}
+
+.post-btn{
+  align-self: flex-start;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: var(--clr-brown);
+  color: var(--clr-white);
+  border: 1px solid;
+  border-color: var(--clr-brown);
+}
+
+.post-btn-cnt{
+  width: 35rem;
+}
+
+.social-media-container{
+  width: 50%;
+  padding: 0rem 6rem;
+}
+
+.social-box{
+  width: 100%;
+  background-color: var(--clr-bg-white);
+  padding: 4rem 3rem;
+}
+
+.social-box1{
+  background-color: var(--clr-brown);
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.post-cnt{
+  color: var(--clr-white);
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.input-email{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-email label{
+  color: var(--clr-white);
+}
+
+.email-inp-field{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--clr-white);
+}
+
+.email-inp-field:hover{
+  border-color: var(--clr-black);
+}
+
+.subscribe{
+  font-size: 1rem;
+  font-weight: 500;
+  align-self: center;
+  padding: 0.5rem 4rem;
+  background-color: var(--clr-white);
+  color: var(--clr-brown);
+  border: 1px solid var(--clr-white);
+}
+
+.subscribe:hover{
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  border-color: var(--clr-black);
+}
+
+.social-box2{
+  margin-top: 4rem;
+}
+
+.instagram{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.image-gallery{
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.image-flex-box-1{
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.img-fbox1{
+  width: 50%;
+  position: relative;
+}
+
+.camera-box{
+  width: 100%;
+}
+
+.camera-box img{
+  width: 12.4rem;
+  height: 11rem;
+}
+
+.hover-box1{
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 11rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-light-black);
+}
+
+.img-fbox1:hover .hover-box1{
+  display: flex;
+}
+
+.social-media-nav{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer{
+  margin-top: 7rem;
+}
+
+.form{
+  background-color: var(--clr-bg-white);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-title{
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.form-box{
+  width: 45rem;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.msg-area{
+  resize: none;
+  overflow-y: scroll;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--clr-black);
+}
+
+.form-box1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-input{
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--clr-black);
+}
+
+.form-submit-btn{
+  align-self: center;
+  padding: 0.75rem 3.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-white);
+  background-color: var(--clr-brown);
+  border: 1px solid var(--clr-brown);
+}
+
+.label:hover .form-input-field{
+  border-bottom: 1px solid var(--clr-brown);
+}
+
+.form-input-field:hover{
+  border-bottom: 1px solid var(--clr-brown);
+}
+
+.copyrights{
+  background-color: var(--clr-brown);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-cnt a{
+  color: var(--clr-white);
+}
+
+.footer-cnt{
+  color: var(--clr-white);
+}
